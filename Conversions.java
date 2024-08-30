@@ -35,15 +35,15 @@ while(true){
             double fahrenheit = celsius * (9.0 / 5.0) + 32;
             System.out.println(celsius + " degrees celsius is " + fahrenheit + " degrees fahrenheit");
         }
-        if (selection == 2)
+        else if (selection == 2)
         {
             System.out.println("Enter Fahrenheit: ");
             double fahrenheit = keyboard.nextDouble();
             keyboard.nextLine();
-            double celsius = fahrenheit * (5.0 * 5.0) - 32;
+            double celsius = (fahrenheit - 32) / 2;
             System.out.println(fahrenheit + " degrees fahrenheit is " + celsius + " degrees celsius");
         }
-        if (selection == 3)
+        else if (selection == 3)
         {
             System.out.println("Enter Feet: ");
             double feet = keyboard.nextDouble();
@@ -51,7 +51,7 @@ while(true){
             double meters = feet * 0.3048;
             System.out.println(feet + " feet is equivalent to " + meters + " meters");
         }
-        if (selection == 4)
+        else if (selection == 4)
         {
             System.out.println("Enter Meters: ");
             double meters = keyboard.nextDouble();
@@ -59,7 +59,7 @@ while(true){
             double feet = meters * 3.28084;
             System.out.println(meters + " meters is equivalent to " + feet + " feet");
         }
-        if (selection == 5)
+        else if (selection == 5)
         {
             System.out.println("Enter Ounces: ");
             double ounces = keyboard.nextDouble();
@@ -67,7 +67,7 @@ while(true){
             double milliliters = ounces * 29.5735;
             System.out.println(ounces + " ounces is equivalent to " + milliliters + " milliliters");
         }
-        if (selection == 6)
+        else if (selection == 6)
         {
             System.out.println("Enter Milliliters: ");
             double milliliters = keyboard.nextDouble();
@@ -75,7 +75,7 @@ while(true){
             double ounces = milliliters * 0.033814;
             System.out.println(milliliters + " milliliters is equivalent to " + ounces + " ounces");
         }
-        if (selection == 7)
+        else if (selection == 7)
         {
             System.out.println("Enter Miles: ");
             double miles = keyboard.nextDouble();
@@ -83,7 +83,7 @@ while(true){
             double kilometers = miles * 1.60934;
             System.out.println(miles + " miles is equal to " + kilometers + " kilometers");
         }
-        if (selection == 8)
+        else if (selection == 8)
         {
             System.out.println("Enter Kilometers: ");
             double kilometers = keyboard.nextDouble();
@@ -91,7 +91,7 @@ while(true){
             double miles = kilometers * 0.621371;
             System.out.println(kilometers + " kilometers is equal to " + miles + " miles");
         }
-        if (selection == 9)
+        else if (selection == 9)
         {
             System.out.println("Enter Inches: ");
             double inches = keyboard.nextDouble();
@@ -99,7 +99,7 @@ while(true){
             double centimeters = inches * 2.54;
             System.out.println(inches + " inches is the same as " + centimeters + " centimeters");
         }
-        if (selection == 10)
+        else if (selection == 10)
         {
             System.out.println("Enter Centimeters: ");
             double centimeters = keyboard.nextDouble();
@@ -107,10 +107,7 @@ while(true){
             double inches = centimeters * 0.393701;
             System.out.println(centimeters + " centimeters is the same as " + inches + " inches");
         }
-        else
-        {
-            break;
-        }
+    else {break;}
     }
 }
 
